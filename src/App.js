@@ -7,10 +7,16 @@ import Form from "react-bootstrap/Form";
 import { FaCropAlt } from "react-icons/fa";
 import { ThemeProvider } from "styled-components";
 
-import { AppTitle, ImageLabel, Paragraph, ThemedRow } from "./styledComponents";
+import {
+  AppTitle,
+  ImageLabel,
+  Paragraph,
+  ThemedRow,
+  ThemedInput,
+} from "./styledComponents";
 import Switch from "./components/switch-theme";
 import upload from "./utils/fileUploadService";
-import "./App.css";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -97,7 +103,7 @@ function App() {
             <form>
               <Form.Group style={{ marginBottom: 30 }}>
                 <ImageLabel htmlFor="image">Drop your image here !</ImageLabel>
-                <input
+                <ThemedInput
                   type="file"
                   ref={fileInput}
                   name="image"

@@ -37,4 +37,11 @@ export const Paragraph = styled.p`
 export const ThemedRow = styled(Row)`
     background-color: ${backgroundColor};
     height: 100vh;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 `;
+
+export const ThemedInput = styled.input`
+    background-color: #f1f1f1;
+    color: #000000;
+`

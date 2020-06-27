@@ -10,6 +10,7 @@ const upload = (file, onUploadProgress) => {
   return http.post("/crop_largest_face", formData, {
     headers: {
       responseType: "arraybuffer",
+      "x-api-key": process.env.REACT_APP_API_KEY,
     },
     onUploadProgress,
   });
